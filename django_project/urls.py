@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('books.urls')),
     path('admin/', admin.site.urls),
     path('welcome/', welcome_view, name='welcome_view'),
+    path("api/", include("apis.urls")),
 ]
